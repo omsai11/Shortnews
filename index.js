@@ -1,16 +1,11 @@
 let value="india";
 play();
-function myFunction()
-{
-    document.getElementById('loading').style.display="block";
-}
-
 let xyzval;
 function xyz(xyzval)
-{  
+{   document.getElementById("preloading").style.display="none";
+    document.getElementById("api").innerHTML=" "
    value=xyzval;
-   play();
-   
+   play(); 
 }
 function play(){
 let file = `https://inshorts.deta.dev/news?category=${value}`
@@ -34,9 +29,9 @@ fetch(file)
 
             </div>
         ` 
-        document.getElementById('loading').style.display="none";
         });
     });
+   
 }
 
 
