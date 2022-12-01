@@ -11,7 +11,7 @@ nav{
     line-height: 60px;
     padding: 0px 100px;
     position: fixed;
-    background-image: linear-gradient(	#67aef5,	#7aebf5);
+    background: linear-gradient(0deg, rgb(248, 238, 223) 0%, rgb(255, 255, 255) 100%);
     font-family: PT Serif;
 }
 .logo{
@@ -20,7 +20,8 @@ nav{
    float:left;
    text-transform: uppercase;
    letter-spacing: 0.5px;
-   cursor: pointer; 
+   cursor: pointer;
+   color:black; 
    
 }
 nav ul{
@@ -32,13 +33,17 @@ nav li{
 nav li a{
     font-size: 18px;
     text-transform: uppercase;
-    padding: 0px 15px;
-    color: black;
+    padding: 0px 20px;
+    color:black;
     text-decoration: none;
 }
 nav li a:hover{
-    color:rgb(28, 4, 250);
     transition: all 0.4% ease;
+    border-radius: 40px;
+    background-color: #ef1b03;
+    padding:10px 20px;
+    color: aliceblue;
+    
 }
 .container{
     display: flex;
@@ -51,6 +56,8 @@ nav li a:hover{
   overflow: hidden;
   background-position:center;
   background-size: cover;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 .Image img:hover{
     cursor: pointer;
@@ -58,6 +65,9 @@ nav li a:hover{
 }
 .Image{
     max-width: 400px;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .content{
@@ -65,18 +75,24 @@ padding-left: 50px;
 flex: 1 0;
 font-size: larger;
 font-family: "Merriweather",serif;
+color: whitesmoke;
 }
 .title{
     padding-top: 30px;
     margin-top: 20px;
-    font-weight: bolder;
     font-family:"Merriweather",serif;
-    font-size: larger;
 }
 .Main{
-   padding-top: 70px;
-}
-.Image{
-
+   padding-top: 50px;
+   background-color: rgba(30, 67, 86, 0.8);
    
 }
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:#fff url(765.png) no-repeat center ;
+    z-index: 99999;
+}
+ 
