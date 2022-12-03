@@ -1,8 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 nav{
@@ -11,17 +10,17 @@ nav{
     line-height: 60px;
     padding: 0px 100px;
     position: fixed;
-    background: linear-gradient(0deg, rgb(248, 238, 223) 0%, rgb(255, 255, 255) 100%);
+    background: linear-gradient(0deg,#141414 0%, #141414 100%);
     font-family: PT Serif;
 }
 .logo{
-   font-size: 30px;
-   font-weight: bold;
-   float:left;
-   text-transform: uppercase;
-   letter-spacing: 0.5px;
-   cursor: pointer;
-   color:black; 
+    font-size: 30px;
+    font-weight: bold;
+    float:left;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    color:white; 
    
 }
 nav ul{
@@ -34,7 +33,7 @@ nav li a{
     font-size: 18px;
     text-transform: uppercase;
     padding: 0px 20px;
-    color:black;
+    color:white;
     text-decoration: none;
 }
 nav li a:hover{
@@ -42,32 +41,36 @@ nav li a:hover{
     border-radius: 40px;
     background-color: #ef1b03;
     padding:10px 20px;
-    color: aliceblue;
+    color: black;
     
 }
 .container{
     display: flex;
-    padding: 30px 200px;
-    
+    padding: 30px 150px;
+    margin-bottom: 20px;  
 }
 .Image img{
-  width: 300px;
-  height: 300px;
+  width:250px;
+  height: 250px;
   overflow: hidden;
   background-position:center;
   background-size: cover;
   box-sizing: border-box;
   border-radius: 10px;
+ 
+  
 }
 .Image img:hover{
     cursor: pointer;
    
 }
 .Image{
-    max-width: 400px;
+    max-width: 350px;
     color: rgb(0, 0, 0);
     font-size: larger;
     font-weight: bolder;
+    padding: 20px;
+    
 }
 
 .content{
@@ -75,7 +78,15 @@ padding-left: 50px;
 flex: 1 0;
 font-size: larger;
 font-family: "Merriweather",serif;
-color: whitesmoke;
+color: black;
+background-color: #fff;
+border-radius: 20px;
+padding: 20px 20px;
+overflow: hidden;
+margin-left: 30px;
+height: 300px;
+width:100%;
+
 }
 .title{
     padding-top: 30px;
@@ -84,11 +95,10 @@ color: whitesmoke;
 }
 .Main{
    padding-top: 50px;
-   background-color: rgba(30, 67, 86, 0.8);
-   
+   background-color: rgba(30, 67, 86, 0.8); 
 }
 
-#preloading{
+#preloading1{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -99,9 +109,97 @@ color: whitesmoke;
 }
 #link{
     margin-left: 5px;
-    background-color: bisque;
+    background-color:rgb(39, 113, 205);
     border-radius: 15px;
     padding: 5px;
     color: black;
+    font-weight: bold;
+    align-self: flex-end;
 }
- 
+#link:hover{
+    background-color: #34ea23;
+}
+@media (max-width:768px) {
+    .logo{
+    font-size: 15px;
+    font-weight: bolder;
+    cursor: pointer;
+    color:white;
+
+    }
+  nav li{
+    display:block;
+  }
+  .container{
+    display: inline-block;
+    padding: 0px 10px;
+    margin-bottom: 10px;  
+}
+.Image img{
+    width:200px;
+    height: 150px;
+    overflow: hidden;
+    background-position:center;
+    background-size: cover;
+    box-sizing: border-box;
+    border-radius: 10px;    
+  }
+  .Image{
+    max-width: 350px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: bold;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content{
+    padding-left:0px;
+    flex: 1 0;
+    font-size: medium;
+    font-family: "Merriweather",serif;
+    color: black;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px 20px;
+    overflow: hidden;
+    margin-left: 0px;
+    height: auto;
+    width:100%;
+    }
+    #link{
+        margin-left: 5px;
+        background-color:rgb(39, 113, 205);
+        border-radius: 10px;
+        padding: 5px;
+        color: black;
+        font-weight: bold;
+        float: right;
+    }
+    .content h5{
+        font-weight: bold;
+        font-size: medium;
+    }
+    nav {
+       display: flex;
+       flex-direction: column;
+      align-items: center;
+      height: 75px;
+      line-height: 35px;
+    }
+    nav li a{
+        font-size: 7px;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        color:white;
+        text-decoration: none;
+    }
+    nav ul{
+        display: flex;
+        padding-left: 0px;
+    }
+    .Main{
+        padding-top: 100px;
+    }
+}

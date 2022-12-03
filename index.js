@@ -24,7 +24,13 @@ fetch(file)
 
             <div class="content">
                 <p>${element.content}</p></br>
-                <h5>${element.date}</h5><span id="link"><a href="${element.readMoreUrl}">READ MORE</a></span>
+                <h5>${element.date}</h5>
+               
+                <a  href="${element.readMoreUrl}">
+                <button id="link">READ MORE</button>
+              </a> 
+             
+            
             </div>
 
             </div>
