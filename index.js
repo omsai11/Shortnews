@@ -24,7 +24,7 @@ fetch(file)
 
             <div class="content">
                 <p>${element.content}</p></br>
-                <h5>${element.date}</h5>
+                <h5>${element.date}</h5><span id="link"><a href="${element.readMoreUrl}">READ MORE</a></span>
             </div>
 
             </div>
